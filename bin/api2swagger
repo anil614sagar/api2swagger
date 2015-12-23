@@ -1,0 +1,42 @@
+#!/usr/bin/env node
+'use strict';
+
+var program = require('commander');
+var version = require('../lib/util/cli').version();
+var executeApi = require('../lib/execute/api.js');
+
+program
+  .version(version);
+
+program
+  .usage('<options>')
+  .option('-e, --endpoint <endpoint>', 'Rest API Endpint')
+  .option('-o, --output <file>', 'Swagger destination location filename')
+  .option('-X, --httpMethod <httpMethod>', 'HTTP Method Name - Allowed HEAD, GET, POST, PUT, DELETE')
+  .description('Generates Swagger 2.0 Spec from an API Call');
+
+program.on('--help', function(){
+  console.log('  Examples:');
+  console.log('');
+  console.log('    $ swaggergen --help');
+  console.log('    $ swaggergen -e http://example.com/returnSomething');
+  console.log('');
+});
+
+program.parse(process.argv);
+
+var options = {};
+options.endpoint = program.endpoint;
+options.httpMethod = program.httpMethod;
+options.output = program.output;
+
+
+
+executeApi.processRequest(options, function(err, reply) {
+  if(err) {
+    console.log(reply);
+  }
+  else {
+    //nothing for now..
+  }
+});

@@ -1,0 +1,36 @@
+{
+  "name": "api2swagger",
+  "version": "0.0.1",
+  "description": "Generate Swagger 2.0 spec from an API call",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "bin": {
+    "api2swagger": "bin/api2swagger"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/anil614sagar/api2swagger.git"
+  },
+  "keywords": [
+    "Swagger",
+    "Generator",
+    "API",
+    "Runtime"
+  ],
+  "author": "Anil Sagar <anil614sagar@gmail.com> (https://in.linkedin.com/in/anilsagar/)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/anil614sagar/api2swagger/issues"
+  },
+  "homepage": "https://github.com/anil614sagar/api2swagger#readme",
+  "dependencies": {
+    "async": "^1.5.0",
+    "commander": "^2.9.0",
+    "http-status": "^0.2.0",
+    "inquirer": "^0.11.0",
+    "json-schema-generator": "^2.0.3",
+    "request": "^2.67.0"
+  }
+}
