@@ -1,6 +1,6 @@
 {
   "name": "api2swagger",
-  "version": "1.0.0",
+  "version": "0.1.0",
   "description": "Generate Swagger 2.0 spec from an API call",
   "main": "index.js",
   "scripts": {
