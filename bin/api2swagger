@@ -13,6 +13,8 @@ program
   .option('-e, --endpoint <endpoint>', 'Rest API Endpint')
   .option('-o, --output <file>', 'Swagger destination location filename')
   .option('-X, --httpMethod <httpMethod>', 'HTTP Method Name - Allowed HEAD, GET, POST, PUT, DELETE')
+  .option('-d, --data <data>', 'POST / PUT Data')
+  .option('-H, --header <header>', 'Request Headers', collect, [])
   .description('Generates Swagger 2.0 Spec from an API Call');
 
 program.on('--help', function(){
@@ -29,6 +31,10 @@ var options = {};
 options.endpoint = program.endpoint;
 options.httpMethod = program.httpMethod;
 options.output = program.output;
+options.data = program.data;
+options.headers = program.header;
+
+
 
 
 
@@ -40,3 +46,9 @@ executeApi.processRequest(options, function(err, reply) {
     //nothing for now..
   }
 });
+
+
+function collect(val, headers) {
+  headers.push(val);
+  return headers;
+}
