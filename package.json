@@ -1,7 +1,7 @@
 {
   "name": "api2swagger",
   "version": "0.1.0",
-  "description": "Generate Swagger 2.0 spec from an API call",
+  "description": "Generate Swagger 2.0 (Open API) spec from Curl like API Call.",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
