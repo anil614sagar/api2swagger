@@ -23,6 +23,6 @@ $ api2swagger -e "https://accounts.apigee.com/status" -X GET -o /Users/Anil/Desk
 
 #### Articles
 
-<a href="#">Getting Started with API2Swagger</a>
+<a href="https://community.apigee.com/articles/15397/api2swagger-open-api-swagger-20-spec-generator-fro.html">Getting Started with API2Swagger - Api2Swagger : Open API (Swagger) 2.0 Spec Generator - Command line tool</a>
 
 
