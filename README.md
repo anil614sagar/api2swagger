@@ -1,4 +1,9 @@
+# Web Version
+
+We now have an UI version online, Check http://specgen.apistudio.io/
+
 # api2swagger
+
 Generate Swagger 2.0 (Open API) spec from Curl like API Call.
 
 # Installation
@@ -24,5 +29,3 @@ $ api2swagger -e "https://accounts.apigee.com/status" -X GET -o /Users/Anil/Desk
 #### Articles
 
 <a href="https://community.apigee.com/articles/15397/api2swagger-open-api-swagger-20-spec-generator-fro.html">Getting Started with API2Swagger - Api2Swagger : Open API (Swagger) 2.0 Spec Generator - Command line tool</a>
-
-
