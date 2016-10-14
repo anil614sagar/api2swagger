@@ -19,6 +19,15 @@ The `api2swagger` module and its dependencies are designed for Node.js and is av
 $ sudo npm install -g api2swagger
 ```
 
+# Options
+| Entry | Explanation |
+| ----- | ----------- |
+| -e, --endpoint | Rest API Endpoint |
+| -o, --output | Swagger destination location filename |
+| -X, --httpMethod | HTTP Method Name - Allowed HEAD, GET, POST, PUT, DELETE |
+| -d, --data | POST / PUT Data |
+| -H, --header | Request Headers to be included  |
+| -P, --proxy | proxy detail - http://username:password@proxyhost:proxyport |
 
 #### Examples
 
