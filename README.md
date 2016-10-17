@@ -26,8 +26,15 @@ $ sudo npm install -g api2swagger
 | -o, --output | Swagger destination location filename |
 | -X, --httpMethod | HTTP Method Name - Allowed HEAD, GET, POST, PUT, DELETE |
 | -d, --data | POST / PUT Data |
-| -H, --header | Request Headers to be included  |
+| -H, --header | Request Headers to be included. |
 | -P, --proxy | proxy detail - http://username:password@proxyhost:proxyport |
+
+Notes on options
+
+| Option | Notes |
+| ------ | ----- |
+| data | Use single-quotes around a JSON string, and on Windows escape the double-quotes within the string by prepending a / i.e. '{ \"grant_type\" : \"XXYYZZ\" }' |
+|header |  Quotes should be used, and multiple headers can be specified by giving multiple -H entries |
 
 #### Examples
 
