@@ -10,11 +10,12 @@ program
 
 program
   .usage('<options>')
-  .option('-e, --endpoint <endpoint>', 'Rest API Endpint')
+  .option('-e, --endpoint <endpoint>', 'Rest API Endpoint')
   .option('-o, --output <file>', 'Swagger destination location filename')
   .option('-X, --httpMethod <httpMethod>', 'HTTP Method Name - Allowed HEAD, GET, POST, PUT, DELETE')
   .option('-d, --data <data>', 'POST / PUT Data')
   .option('-H, --header <header>', 'Request Headers', collect, [])
+  .option('-P, --proxy <proxy>','proxy detail - http://username:password@proxyhost:proxyport')
   .description('Generates Swagger 2.0 Spec from an API Call');
 
 program.on('--help', function(){
@@ -33,7 +34,7 @@ options.httpMethod = program.httpMethod;
 options.output = program.output;
 options.data = program.data;
 options.headers = program.header;
-
+options.proxy = program.proxy;
 
 
 
